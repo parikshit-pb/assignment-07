@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Issues - Can't Access Account",
+    "description": "User cannot log in with correct credentialsCustomer is unable to log in to their account. They've tried their password multiple times but still...",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-10-20"
+  },
+  {
+    "id": 1002,
+    "title": "Navbar misaligned",
+    "description": "Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.",
+    "customer": "Anna Smith",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-10-21"
+  },
+  {
+    "id": 1003,
+    "title": "Payment failed",
+    "description": "Customer cannot download their January invoice from the billing section. The download button is...",
+    "customer": "Kamal",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "2025-10-18"
+  },
+  {
+    "id": 1004,
+    "title": "Profile image not uploading",
+    "description": "Customer’s billing address shows a different city. They updated it but it still displays the old one.",
+    "customer": "Rita",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2025-10-15"
+  },
+  {
+    "id": 1005,
+    "title": "Slow dashboard",
+    "description": "Customer reports that the mobile app crashes immediately upon opening on Android 13.",
+    "customer": "Hasan",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-10-17"
+  },
+  {
+    "id": 1006,
+    "title": "2FA not working",
+    "description": "Customer requested a refund two weeks ago but has not received the amount yet.",
+    "customer": "Sadia",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "2025-10-14"
+  },
+  {
+    "id": 1007,
+    "title": "Broken link",
+    "description": "Customer is not receiving 2FA codes on their registered phone number.",
+    "customer": "Rafi",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2025-10-10"
+  },
+  {
+    "id": 1008,
+    "title": "Search results wrong",
+    "description": "Customer tries to upload a new profile picture but gets 'Upload failed' error.",
+    "customer": "Mina",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Pending",
+    "createdAt": "2025-10-12"
+  },
+  {
+    "id": 1009,
+    "title": "Export CSV error",
+    "description": "Customer wants to enable auto-renewal for their subscription but the toggle is disabled.",
+    "customer": "Tuhin",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-10-11"
+  },
+  {
+    "id": 1010,
+    "title": "Email templates broken",
+    "description": "Customer placed an order but didn't receive a confirmation email even though payment succeeded.",
+    "customer": "Nadia",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2025-10-09"
+  }
+  
+]
