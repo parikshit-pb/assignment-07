@@ -1,5 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 body{
-    background-color: ;
+
+}
+.footer-title{
+    color: white;
+    font-weight: 600;
+}
+.link {
+color: #A1A1AA;
 }
