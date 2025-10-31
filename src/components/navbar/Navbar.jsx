@@ -4,7 +4,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         
-   <div className="navbar  bg-base-100 justify-between items-center shadow-sm max-w-[1500px] mx-auto px-10">
+   <div className="navbar  bg-base-100 justify-between items-center shadow-sm max-w-[1500px] mx-auto px-9">
   <div className="">
     
     <a className="btn btn-ghost text-xl">CS — Ticket System</a>

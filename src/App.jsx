@@ -9,9 +9,6 @@ import {ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const cardPromise = fetch('/card.json').then(res => res.json())
-
-
 function App() {
   // state declare
   const [cardData, setCardData] = useState([])
@@ -49,7 +46,7 @@ useEffect(() => {
       if (!task) return;
       setSelectedTasks(prev => prev.filter(t => t.id !== cardId))
 
-      setResolvedTasks(prev => [...prev, {...task, status: 'Resolved'}])
+      setResolvedTasks([...resolvedTasks, task])
 
       setCardData(prev => prev.filter(t => t.id !== cardId))
 
@@ -70,7 +67,9 @@ useEffect(() => {
     <CardItem cardData={cardData}
     onCardClick={handleCardClick}
     selectedTasks={selectedTasks}
-    onComplete={handleComplete}></CardItem>
+    onComplete={handleComplete}
+    resolvedTasks={resolvedTasks}
+    ></CardItem>
     </Suspense>
     <ToastContainer position='top-right' autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover></ToastContainer>
     <FooterItem></FooterItem>

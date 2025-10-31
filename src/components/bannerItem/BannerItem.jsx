@@ -3,7 +3,7 @@ import backgroundImg from '../../assets/vector1.png'
 
 const BannerItem = ({inProgress, resolved}) => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 py-10 max-w-[1500px] mx-auto bg-base-200 gap-4 place-items-center px-5
+        <div className='grid grid-cols-1 md:grid-cols-2 py-10 max-w-[1500px] mx-auto bg-base-200 gap-4 place-items-center
 '>
     <div className="bg-green-500 banner-1 max-w-[660px] h-auto bg-gradient-to-r from-[#422AD5] to-[#9a5af5] py-[60px] w-full relative">
     

@@ -43,7 +43,7 @@ const FooterItem = () => {
 support@cst.com</a>
   </nav>
   </div>
-  <p className='text-white text-center'>© 2025 CS — Ticket System. All rights reserved.</p>
+  <p className='text-white text-center pb-3.5'>© 2025 CS — Ticket System. All rights reserved.</p>
 </footer>
     );
 };

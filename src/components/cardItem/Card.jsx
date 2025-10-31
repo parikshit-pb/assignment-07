@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import cardIcon from '../../assets/Vector-icon.png'
 
-const CardItem = ({cardData= [], onCardClick, selectedTasks, onComplete, resolvedTask }) => {
+const CardItem = ({cardData= [], onCardClick, selectedTasks, onComplete, resolvedTask= [] }) => {
     // const [cardData, setCardData] = useState([]);
 
     useEffect(() => {
@@ -12,10 +12,10 @@ const CardItem = ({cardData= [], onCardClick, selectedTasks, onComplete, resolve
     }, [])
     // console.log(cardData)
     return (
-   <div className="max-w-[1500px] mx-auto p-10 border-2 border-black bg-base-200 gap-4 flex flex-col md:flex-row">
+   <div className="max-w-[1500px] mx-auto p-9 bg-base-200 gap-4 flex flex-col md:flex-row">
     <div>
-        <h1 className='text-lg font-semibold pl-3 pb-1.5'>Customer Tickets</h1>
-      <div className='w-full  bg-base-200 border-2 border-green-500 gap-4 grid grid-cols-1 md:grid-cols-2'>
+        <h1 className='text-lg font-semibold pb-1.5'>Customer Tickets</h1>
+      <div className='w-full  bg-base-200 gap-4 grid grid-cols-1 md:grid-cols-2'>
 
          {
             cardData.map(card =><div key={card.id} className="card bg-base-100 shadow-md px-2 py-4"
@@ -50,7 +50,7 @@ const CardItem = ({cardData= [], onCardClick, selectedTasks, onComplete, resolve
 </div>)
         }  </div>
     </div>
-        <div className="md:w-1/4 border-2 border-red-500  ">
+        <div className="md:w-1/4 ">
         <div className='task-status-right'>
             <h1 className=' text-lg font-semibold px-3'>Task Status</h1>
             {selectedTasks.length > 0 ? (
@@ -63,13 +63,13 @@ const CardItem = ({cardData= [], onCardClick, selectedTasks, onComplete, resolve
                    </div> 
                 ))
             ) : ( 
-                <p className='text-sm text-[#627382] px-3'>Select a ticket to add to Task Status</p>
+                <p className='text-sm text-[#627382] px-3'>Select a ticket Task Status</p>
             ) }
             
         </div>
         <div className='p-3'>
             <h2 className='text-lg font-semibold'>Resolved-Task</h2>
-            <p className='text-sm text-[#627382] pt-3'>Incorrect Billing Address</p>
+            <p className='text-sm text-[#627382] pt-3'>No resolved tasks yet.</p>
         </div>
         </div>
    </div>
